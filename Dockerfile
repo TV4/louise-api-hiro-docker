@@ -19,5 +19,5 @@ RUN cd && git clone https://github.com/apiaryio/drafter.git && \
     make drafter && \
     make install
 COPY ./iglo /go/src/github.com/subosito/iglo
-RUN go install github.com/peterhellberg/hiro
+RUN go install github.com/peterhellberg/hiro@latest
 ENTRYPOINT ["tail", "-f", "/dev/null"]
